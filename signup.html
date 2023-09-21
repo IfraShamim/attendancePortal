@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--header  -->
+    <header>
+        <h3>Student's Attendance Portal</h3>
+        <a href="./login.html"><button class="button active" type="submit" id="login"
+                style="margin: 0.3rem;">Login</button></a>
+    </header>
+    <!-- #titleSignUp -->
+    <div id="titleSignUp">
+        <h1>Signup</h1>
+        <a href="./adminLogin.html"><button class="button active" type="submit"
+                style="width: 12rem; margin-left:1rem ;float:right; margin-top: -3rem; margin-right: 2rem; background-color: white; color: #7749F8; box-shadow: none;">Admin</button></a>
+    </div>
+    <!-- #form -->
+    <div id="form">
+        <input type="text" id="userName" placeholder="User Name" name="User Name" minlength="3" maxlength="20" required>
+        <input type="email" id="email" placeholder="Email" name="Email" required>
+        <input type="password" id="password" placeholder="Password" name="Password" minlength="8" required
+            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).+$">
+        <input type="password" id="repeatPassword" placeholder="Repeat Password" name="Repeat Password" minlength="8"
+            required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).+$"><br>
+        <button class="button" type="submit" id="signup">Signup</button>
+    </div>
+    <script type="module" src="./signup.js"></script>
+</body>
+
+</html>

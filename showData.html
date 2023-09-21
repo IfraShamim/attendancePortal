@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+     <!--header  -->
+     <header><h3>Student's Attendance Portal</h3>
+        <a href="./signup.html"><button class="button active" type="submit" id="login"
+            style="margin: 0.3rem;">Logout</button></a></header></header>
+      <!-- #titleSignUp -->
+    <div id="titleSignUp">
+        <h1>Show Admin's Assigned Data</h1>
+    </div>
+    <!-- Data Entry Form (visible to admin only) -->
+    <div id="dataEntryForm">
+        <input type="number" id="rollNo" placeholder="Enter Roll No. To Read Assigned Data">
+        <input placeholder="Class Timings" id="classTimings" required>
+        <input placeholder="Schedule of Classes" id="schedule" required>
+        <input placeholder="Teacher's Name" id="teacherName" required>
+        <input placeholder="Section Name" id="sectionName" required>
+        <input placeholder="Course Name" id="courseName" required>
+        <input placeholder="Batch Number" id="batchNumber" required>
+        <!-- <select placeholder="Course Name" id="attendance" required>
+            <option disabled selected value="">Attendance Mark</option>
+            <option value="Present">Present</option>
+            <option value="Absent">Absent</option>
+            <option value="Leave">Leave</option>
+        </select> -->
+        <br><br>
+        <button id="readData">Read Data</button>
+        <!-- <button id="updateData">Update Data</button> -->
+
+    </div>
+    <script type="module" src="./adminDetail.js"></script>
+</body>
+</html>

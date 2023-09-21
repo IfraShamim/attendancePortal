@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--header  -->
+    <header>
+        <h3>Student's Attendance Portal</h3>
+        <a href="./signup.html"><button class="button active" type="submit" id="login"
+            style="margin: 0.3rem;">Logout</button></a>
+        <!-- <a href=""><button class="button active" type="submit" id="login" style="margin: 0.3rem;">Login</button></a> -->
+    </header>
+    <!-- #titleSignUp -->
+    <div id="titleSignUp">
+        <h1>Students Enrollement</h1>
+        <a href="./showData.html"><button class="button active" type="submit"
+                style="width: 12rem; margin-left:1rem ;float:right; margin-top: -3rem; margin-right: 2rem; background-color: white; color: #7749F8; box-shadow: none;">Show My Data</button></a>
+    </div>
+    <!-- #form -->
+    <div id="form" style="margin-top: 4rem;">
+        <input type="text" id="name" placeholder="Name" name="User Name" minlength="3" maxlength="20" required>
+        <input type="text" id="fatherName" placeholder="Father Name" name="Father Name" minlength="3" maxlength="20"
+            required>
+        <input type="number" id="rollNo" placeholder="Roll Number" name="Roll Number">
+        <input type="number" id="contactNo" placeholder="Contact Number" name="Contact Number" minlength="11"
+            maxlength="11" required>
+        <input type="number" id="cnicNo" placeholder="CNIC Number" name="CNIC Number" minlength="13" maxlength="13"
+            required> <br>
+        <!-- <input type="text" id="CourseName" placeholder="Course Name" name="Course Name" minlength="3"> -->
+        <select placeholder="Course Name" id="CourseName" required>
+            <option disabled selected value="">Select Course Name</option>
+            <option value="Web Development">Web & App Development</option>
+            <option value="Graphic Designing">Graphic Designing</option>
+            <option value="AI & ChatBot">AI & ChatBot</option>
+            <option value="Video Editing">Video Editing</option>
+        </select>
+
+        <br>
+        <button class="button" type="submit" id="submit">Submit</button>
+    </div>
+    <script type="module" src="./studentsEnrollement.js"></script>
+</body>
+
+</html>

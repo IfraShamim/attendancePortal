@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--header  -->
+    <header>
+        <h3>Student's Attendance Portal</h3>
+        <a href="./studentsEnrollement.html"><button class="button" type="submit" id="enroll" style="margin: 0.3rem;">Enrollement</button></a>
+    </header>
+    <!-- #titleSignUp -->
+    <div id="titleSignUp">
+        <h1>Login</h1>
+    </div>
+    <!-- #form -->
+    <div id="form">
+        <input type="email" id="email" placeholder="Email" name="Email" required>
+        <input type="password" id="password" placeholder="Password" name="Password" minlength="8" required
+            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).+$"><br>
+        <a href="./studentsEnrollement.html"><button class="button" type="submit" id="login">Login</button></a>
+    </div>
+    <script type="module" src="./login.js"></script>
+</body>
+</html>

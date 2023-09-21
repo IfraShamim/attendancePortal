@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--header  -->
+    <header>
+        <h3>Student's Attendance Portal</h3>
+        <a href="./signup.html"><button class="button active" type="submit" id="login"
+                style="margin: 0.3rem;">Signup</button></a>
+    </header>
+    <!-- #titleSignUp -->
+    <div id="titleSignUp">
+        <h1>Mark Student's Attendance</h1>
+        <a href="./login.html"><button class="button active" type="submit"
+                style="width: 12rem; margin-left:1rem ;float:right; margin-top: -3rem; margin-right: 2rem; background-color: white; color: #7749F8; box-shadow: none;">Login</button></a>
+    </div>
+    <div style="width: 53%; margin: auto; margin-top: 0.5rem;"><h2>"If you already have an account, or if the admin has assigned you a class or batch, or if your data shows every time, then you must first create an account to mark your attendance, or if you want to mark attendance, you must do a job. It won't happen..."</h2></div>
+    <div id="form">
+        <input type="number" id="rollNo" placeholder="Please Enter Your Roll No.." name="rollNo" required>
+        <select placeholder="markAttend" id="markAttend" required>
+            <option disabled selected value="">Select To Mark Attendance..</option>
+            <option value="Present">Present</option>
+            <option value="Absent">Absent</option>
+            <option value="Leave">Leave</option>
+        </select>
+        <br>
+        <button class="button" type="submit" id="marked">Marked!</button>
+    </div>
+    <script type="module" src="./index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+     <!--header  -->
+     <header><h3>Student's Attendance Portal</h3>
+        <a href="./signup.html"><button class="button active" type="submit" id="login"
+            style="margin: 0.3rem;">Logout</button></a></header>
+      <!-- #titleSignUp -->
+    <div id="titleSignUp">
+        <h1>Add Admin Data</h1>
+    </div>
+    <!-- Data Entry Form (visible to admin only) -->
+    <div id="dataEntryForm">
+        <input type="number" id="rollNo" placeholder="Enter Roll No. For Edit">
+        <select placeholder="Class Timings" id="classTimings" required>
+            <option disabled selected value="">Select Class Timings</option>
+            <option value="(9 - 10)AM">(9 - 10)AM</option>
+            <option value="(10 - 12)AM">(10 - 12)AM</option>
+            <option value="(02 - 04)PM">(02 - 04)PM</option>
+        </select>
+        <select placeholder="Schedule of Classes" id="schedule" required>
+            <option disabled selected value="">Select Schedule of Classes</option>
+            <option value="Week Day">Week Day</option>
+            <option value="Weekend Day">Weekend Day</option>
+        </select>
+        <select placeholder="Teacher's Name" id="teacherName" required>
+            <option disabled selected value="">Select Teacher's Name</option>
+            <option value="Miss Hina">Miss Hina</option>
+            <option value="Miss Iqra">Miss Iqra</option>
+            <option value="Sir Inzamam Malik">Sir Inzamam Malik</option>
+            <option value="Sir Ghous">Sir Ghous</option>
+            <option value="Sir Ishaq">Sir Ishaq</option>
+        </select>
+        <select placeholder="Section Name" id="sectionName" required>
+            <option disabled selected value="">Select Section Name</option>
+            <option value="Section A">Section A</option>
+            <option value="Section B">Section B</option>
+            <option value="Section C">Section C</option>
+        </select>
+        <select placeholder="Course Name" id="courseName" required>
+            <option disabled selected value="">Select Course Name</option>
+            <option value="Web Development">Web & App Development</option>
+            <option value="Graphic Designing">Graphic Designing</option>
+            <option value="AI & ChatBot">AI & ChatBot</option>
+            <option value="Video Editing">Video Editing</option>
+        </select>
+        <select placeholder="Batch Number" id="batchNumber" required>
+            <option disabled selected value="">Select Batch Number</option>
+            <option value="Batch-7">Batch-7</option>
+            <option value="Batch-8">Batch-8</option>
+            <option value="Batch-9">Batch-9</option>
+        </select>
+        <br><br>
+        <button id="addDataButton">Add Data</button>
+    </div>
+    <script type="module" src="./adminDetail.js"></script>
+</body>
+</html>
